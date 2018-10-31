@@ -1,2 +1,2 @@
 # The.Walkins
-Initial Walkins content for website/page
+This is a website developed in html,css,js and bootstrap4.
