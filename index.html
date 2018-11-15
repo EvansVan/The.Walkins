@@ -30,11 +30,18 @@
           min-height: 100vh;
           -webkit-overflow-scrolling: touch;
         }
-      }
+      }        
+        #watch-listen {
+          width: 400px;
+          float: right;
+          margin: 50px chocolate;
+
+        }
     </style>
   </head>
 <body>
-  
+
+<!--navbar code-->
 <div class="container pt-4">
     <button class="navbar-toggler navbar-toggler-right hidden-md-up" 
       type="button" 
@@ -55,7 +62,7 @@
           <h2><a class="nav-link" href="index.html"><span class="icon icon-home"></span></a></h2>
         </li>
         <li class="nav-item">
-         <h2><a class="nav-link" href="#The show">About</a></h2>
+         <h2><a class="nav-link" href="#theshow">About</a></h2>
         </li>
         <li class="nav-item ">
          <!-- <a class="nav-link" href="bold/index.html">Bold</a> -->
@@ -68,17 +75,27 @@
   </nav>
 </div>
 
+
+<!--Watch and listen pane-->
+<div class="container pt-4" id="watch-listen">
+  <h1>Watch/Listen</h1>
+  <iframe width="100%" height="100" scrolling="no" frameborder="yes" allow="" 
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/527178081&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+  </iframe>
+</div>
+
+
+
 <!--Page header-->
 <div>
   <div class="container text-xs-center">
     <h1 class="block-title mb-0 app-myphone-brand">The Walk-ins</h1>
     <h1>Get the low down on the people who are on the come up</h1>
-    <img data-action="zoom" src="assets/img/walk/walk.jpg">
-  </div>
+    <img data-action="zoom" src="assets/img/walk.jpg">
 </div>
 
 <!---About page-->
-<div class="block block-bordered-lg">
+<div class="block block-bordered-lg" id=theshow>
   <div class="about container text-xs-center">
     <h3><p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam odio sapien, sollicitudin vel volutpat eget, faucibus at neque.Vestibulum ante ipsum primis in faucibus orci luctus et ultri Sed elementum lorem et quam volutpat viverra mollis at mi. In rutrum sagittis ligula, dapibus porttitor nisl posuere
     in.Suspendisse pulvinar massa nibh. Duis scelerisque diam vel dui matti.Duis rutrum, elit id consequat vehicula, risus libero pulvinar eros, ut aliquet tellus odio nec elit. Sed quam leo,iaculis laoreet commodo sed, elementum ut justo. Suspendisse blandit est $
