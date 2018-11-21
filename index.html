@@ -42,7 +42,7 @@
 <body>
 
 <!--navbar code-->
-<div class="container pt-4">
+<div class="container pt-4" id="top">
     <button class="navbar-toggler navbar-toggler-right hidden-md-up" 
       type="button" 
       data-toggle="collapse" 
@@ -51,7 +51,7 @@
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  <nav class="navbar navbar-light navbar-toggleable-sm navbar-statimr-autoc-top app-navbar mb-5">
+  <nav class="container navbar navbar-light navbar-toggleable-sm navbar-statimr-autoc-top app-navbar my-5 fixed-top">
     <a class="navbar-brand mr-auto" href="#">
       <h1><span>Walkins</span></h1>
     </a>
@@ -59,13 +59,13 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="nav navbar-nav ml-auto">
         <li class="nav-item active">
-          <h2><a class="nav-link" href="index.html"><span class="icon icon-home"></span></a></h2>
+          <h2><a class="nav-link" href="#top"><span class="icon icon-home"></span></a></h2>
         </li>
         <li class="nav-item">
          <h2><a class="nav-link" href="#theshow">About</a></h2>
         </li>
         <li class="nav-item ">
-         <!-- <a class="nav-link" href="bold/index.html">Bold</a> -->
+          <h2><a class="nav-link" href="#contactform">Contact us</a></h2>
         </li>
         <li class="nav-item ">
         <!-- <a class="nav-link" href="docs/index.html">Docs</a> -->
@@ -75,10 +75,10 @@
   </nav>
 </div>
 
-
 <!--Watch and listen pane-->
-<div class="container pt-4" id="watch-listen">
-  <h1>Watch/Listen</h1>
+
+<div class="container pt-4 text-xs-center mt-5" id="watch-listen">
+<h1 class="mb-0 app-myphone-brand icon icon-soundcloud">Watch/Listen</h1>
   <iframe width="100%" height="100" scrolling="no" frameborder="yes" allow="" 
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/527178081&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
   </iframe>
@@ -88,7 +88,7 @@
 
 <!--Page header-->
 <div>
-  <div class="container text-xs-center">
+<div class="container text-xs-center mt-5">
     <h1 class="block-title mb-0 app-myphone-brand">The Walk-ins</h1>
     <h1>Get the low down on the people who are on the come up</h1>
     <img data-action="zoom" src="assets/img/walk.jpg">
@@ -104,7 +104,7 @@
 </div>
 
 <!--contact form-->
-<div class="block block-bordered text-xs-center">
+<div class="block block-bordered text-xs-center" id="contactform">
   <div class="contact container">
       <h1>Reach out
       <p>We are always open and listening</p></h1>
