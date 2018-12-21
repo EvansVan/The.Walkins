@@ -13,7 +13,8 @@
       <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
       <link href="assets/css/toolkit-minimal.css" rel="stylesheet">
       <link href="assets/css/application-minimal.css" rel="stylesheet">
-
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.10.1/bootstrap-social.css" rel="stylesheet">
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
       /* this chunk of css is not part of the toolkit :) */
@@ -31,119 +32,109 @@
           -webkit-overflow-scrolling: touch;
         }
       }        
-        #watch-listen {
+        #listen {
           width: 400px;
           float: right;
-          margin: 50px chocolate;
-
+        }
+        #nav {
+          margin-bottom: 250px;
+        }
+        #logo {
+          padding-left: 120px;
+        }
+        #listen {
+          padding-top: 130px;
+        }
+        #tilda {
+          padding-top: 120px;        
         }
     </style>
   </head>
 <body>
 
-<!--navbar code-->
-<div class="container pt-4" id="top">
-    <button class="navbar-toggler navbar-toggler-right hidden-md-up" 
-      type="button" 
-      data-toggle="collapse" 
-      data-target="#navbarResponsive"
-      aria-controls="navbarResponsive" aria-expanded="false" 
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  <nav class="container navbar navbar-light navbar-toggleable-sm navbar-statimr-autoc-top app-navbar my-5 fixed-top">
-    <a class="navbar-brand mr-auto" href="#">
-      <h1><span>Walkins</span></h1>
-    </a>
+  <!--navbar code-->
+  <nav class="container-fluid bg-warning navbar navbar-light navbar-toggleable-sm navbar-statimr-autoc-top app-navbar fixed-top" id="nav">   
+     <button class="navbar-toggler navbar-toggler-right hidden-md-up" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mr-auto" href="#">
+        <img src="assets/img/walkins.png" id="logo" alt="The Walk-ins" height="80px" width="300px">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item active">
+            <h3><a class="nav-link" href="#top"><span class="icon icon-home"></span></a></h3>
+          </li>
+          <li class="nav-item">
+            <h3><a class="nav-link" href="#theshow">About</a></h3>
+          </li>
+          <li class="nav-item ">
+            <h3><a class="nav-link" href="#contactform">Reach out</a></h3>
+          </li>
+          <li class="nav-item ">
+          <!-- <a class="nav-link" href="docs/index.html">Docs</a> -->
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </nav>
 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item active">
-          <h2><a class="nav-link" href="#top"><span class="icon icon-home"></span></a></h2>
-        </li>
-        <li class="nav-item">
-         <h2><a class="nav-link" href="#theshow">About</a></h2>
-        </li>
-        <li class="nav-item ">
-          <h2><a class="nav-link" href="#contactform">Contact us</a></h2>
-        </li>
-        <li class="nav-item ">
-        <!-- <a class="nav-link" href="docs/index.html">Docs</a> -->
-        </li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </nav>
-</div>
+  <!--Watch and listen pane-->
+  <div class="container" id="listen">
+    <h1 class="mb-3 app-myphone-brand icon icon-soundcloud">  Listen</h1>
+      <iframe width="100%" height="100" scrolling="no" frameborder="yes" allow="" 
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/527178081&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+      </iframe>
+  </div>
 
-<!--Watch and listen pane-->
-
-<div class="container pt-4 text-xs-center mt-5" id="watch-listen">
-<h1 class="mb-0 app-myphone-brand icon icon-soundcloud">Watch/Listen</h1>
-  <iframe width="100%" height="100" scrolling="no" frameborder="yes" allow="" 
-  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/527178081&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-  </iframe>
-</div>
-
-
-
-<!--Page header-->
-<div>
-<div class="container text-xs-center mt-5">
+  <!--Page header-->
+  <div class="container text-center" id="tilda">
     <h1 class="block-title mb-0 app-myphone-brand">The Walk-ins</h1>
     <h1>Get the low down on the people who are on the come up</h1>
-    <img data-action="zoom" src="assets/img/walk.jpg">
-</div>
-
-<!---About page-->
-<div class="block block-bordered-lg" id=theshow>
-  <div class="about container text-xs-center">
-    <h3><p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam odio sapien, sollicitudin vel volutpat eget, faucibus at neque.Vestibulum ante ipsum primis in faucibus orci luctus et ultri Sed elementum lorem et quam volutpat viverra mollis at mi. In rutrum sagittis ligula, dapibus porttitor nisl posuere
-    in.Suspendisse pulvinar massa nibh. Duis scelerisque diam vel dui matti.Duis rutrum, elit id consequat vehicula, risus libero pulvinar eros, ut aliquet tellus odio nec elit. Sed quam leo,iaculis laoreet commodo sed, elementum ut justo. Suspendisse blandit est $
-    </p></span></h3>
+    <img data-action="zoom" alt="walkers" src="assets/img/walk.jpg">
   </div>
-</div>
 
-<!--contact form-->
-<div class="block block-bordered text-xs-center" id="contactform">
-  <div class="contact container">
-      <h1>Reach out
-      <p>We are always open and listening</p></h1>
-    <div class="row container text-left">
-        <form class="">
-          <h3><label class="form-control-label" for="email">How can we reach you</h3>
-          <input class="form-control mb-3" placeholder="email address">
-          <h3><label for="subject">Talk to us</label></h3>
-          <textarea rows="8" cols="55" placeholder="Write something.."></textarea> 
-          <br>
-          <button class="btn btn-primary mb-3">Submit</button>
-        </form>
-    </div>  
-  </div>
-</div>
-
-<!--site footer-->
-<div class="block app-block-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-2 mb-4">
-        <ul class="list-unstyled list-spaced">
-          <li><h6 class="text-uppercase">Services</h6></li>
-        </ul>
-      </div>
-      <div class="col-sm-2 mb-4">
-        <ul class="list-unstyled list-spaced">
-          <li><h6 class="text-uppercase">Extras</h6></li>
-        </ul>
-      </div>
+  <!---About page-->
+  <div class="block block-bordered-lg" id="theshow">
+    <div class="about container text-xs-center">
+      <h3><p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam odio sapien, sollicitudin vel volutpat eget, faucibus at neque.Vestibulum ante ipsum primis in faucibus orci luctus et ultri Sed elementum lorem et quam volutpat viverra mollis at mi. In rutrum sagittis ligula, dapibus porttitor nisl posuere
+      in.Suspendisse pulvinar massa nibh. Duis scelerisque diam vel dui matti.Duis rutrum, elit id consequat vehicula, risus libero pulvinar eros, ut aliquet tellus odio nec elit. Sed quam leo,iaculis laoreet commodo sed, elementum ut justo. Suspendisse blandit est $
+      </span></p></h3>
     </div>
   </div>
-</div>
+
+  <!--contact form-->
+  <form>
+    <div class="container">
+      <div class="form-group">
+        <label for="email">email@example.com</label>
+        <input class="form-control" id="email" type="text" placeholder="Email..">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+  <!--site footer-->
+  <div class="block app-block-footer pt-4">
+    <div>
+     
+    </div>
+  </div>
 
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/tether.min.js"></script>
-    <script src="assets/js/toolkit.js"></script>
-    <script src="assets/js/application.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/tether.min.js"></script>
+      <script src="assets/js/toolkit.js"></script>
+      <script src="assets/js/application.js"></script>
+      <script>
+        $(window).on('beforeunload', function () {
+          $(window).scrollTop(0);
+        });
+      </script>
 </body>
 </html>
 

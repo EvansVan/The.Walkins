@@ -1,2 +1,2 @@
 # The.Walkins
-This is a website developed in html,css,js and bootstrap4.
+This is a website developed using bootstrap4.
