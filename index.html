@@ -46,7 +46,29 @@
           padding-top: 130px;
         }
         #tilda {
-          padding-top: 120px;        
+          padding-top: 120px;
+        }
+        .fa {
+          border-radius: 50%;
+        }
+        .fa:hover {
+          opacity: 0.7;
+        }
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+        .fa-youtube {
+          background: #bb0000;
+          color: white;
+        }
+        .fa-instagram {
+          background: #125688;
+          color: white;
         }
     </style>
   </head>
@@ -63,7 +85,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand mr-auto" href="#">
-        <img src="assets/img/walkins.png" id="logo" alt="The Walk-ins" height="80px" width="300px">
+        <img src="assets/img/walkins.png" id="logo" alt="The Walk-ins" height="0%" width="50%">
       </a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="nav navbar-nav ml-auto">
@@ -76,16 +98,13 @@
           <li class="nav-item ">
             <h3><a class="nav-link" href="#contactform">Reach out</a></h3>
           </li>
-          <li class="nav-item ">
-          <!-- <a class="nav-link" href="docs/index.html">Docs</a> -->
-          </li>
         </ul>
       </div><!--/.nav-collapse -->
     </nav>
 
   <!--Watch and listen pane-->
   <div class="container" id="listen">
-    <h1 class="mb-3 app-myphone-brand icon icon-soundcloud">  Listen</h1>
+    <h1 class="mb-3 app-myphone-brand icon icon-soundcloud">Listen</h1>
       <iframe width="100%" height="100" scrolling="no" frameborder="yes" allow="" 
       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/527178081&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
       </iframe>
@@ -119,12 +138,30 @@
   </form>
 
   <!--site footer-->
-  <div class="block app-block-footer pt-4">
-    <div>
-     
+  <div class="block app-block-footer py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <a target="#" href="https://web.facebook.com/thewalkinske/" class="btn btn-social-icon btn-lg btn-facebook"><i class="fa fa-facebook"></i></a>
+            <a target="#" href="https://www.instagram.com/the.walk.ins/" class="btn btn-social-icon btn-lg btn-instagram"><i class="fa fa-instagram"></i></a>
+            <a target="#" href="https://twitter.com/thewalkinske" class="btn btn-social-icon btn-lg btn-twitter"><i class="fa fa-twitter"></i></a>
+            <a target="#" href="https://www.youtube.com/channel/UCELYiTPNKwH1hOAGw9fdttA" class="btn btn-social-icon btn-lg btn-youtube"><i class="fa fa-youtube"></i></a>
+        </div>  
+        <div class="col"> 
+          <h1><strong>#TheWalkinsKE</strong></h1>
+          <h3><p><strong>the.walkinske@gmail.com</strong></p></h3>
+          <h3><p><strong>+254 713 825 608</strong></p></h3>
+        </div>
+        <div class="col">
+          <h1><strong>About Us</strong></h1>          
+          <h5><p><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</strong></p>
+
+          <p><strong>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.</strong></p></h5>
+        </div>
+      </div>
     </div>
   </div>
-
 
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/tether.min.js"></script>
